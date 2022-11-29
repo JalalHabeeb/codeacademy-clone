@@ -412,3 +412,112 @@ div.pic {
     align-items: center;
   }
 }
+div.fifth-container {
+  background-color: #fff0e5;
+}
+div.head {
+  /* margin-left: 5%; */
+  padding-top: 20px;
+}
+div.person {
+  width: 90%;
+  margin: 20px auto 30px auto;
+}
+div.person img {
+  width: 100%;
+}
+@media screen and (min-width: 501px) {
+  div.persons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 900px) {
+  div.persons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  div.explore-grid {
+    visibility: hidden;
+  }
+  div.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+div.sixth-container {
+  background-color: #3a10e5;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+}
+div.numbers {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 500px) {
+  div.sixth-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  div.numbers {
+    display: grid;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 900px) {
+  div.numbers {
+    display: flex;
+  }
+}
+div.seventh-container {
+  background-color: #10162f;
+  padding: 20px;
+  color: white;
+}
+div.svg svg {
+  width: 150px;
+}
+div.left > * {
+  width: 90%;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 500px) {
+  div.seventh-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.eighth-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.two-girls {
+}
+.two-girls img {
+  width: 80%;
+  margin: 0 auto;
+}
+.start-free {
+  width: 80%;
+  margin: 15px auto;
+}
+.start-free input {
+  margin-top: 15px;
+}
+@media screen and (min-width: 500px) {
+  .eighth-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+  }
+}
