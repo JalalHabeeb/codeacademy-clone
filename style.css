@@ -165,6 +165,8 @@ form.register input {
   line-height: 40px;
   margin-bottom: 20px;
   margin-top: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 form.register button {
@@ -266,6 +268,7 @@ nav.courses {
 .course-card {
   background-color: white;
   padding: 25px;
+  /* height: 150px; */
 }
 
 .course-card a p,
@@ -287,7 +290,66 @@ nav.courses {
     display: grid;
     grid-template-columns: repeat(2, minmax(170px, 300px));
     grid-template-rows: repeat(2, minmax(170px, 300px));
+    gap: 15px;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .courses-cards {
+    margin: auto;
+    width: 80%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 5%;
     justify-content: space-around;
   }
 }
+
+.explore {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 20px auto;
+}
+
+.explore input {
+  width: 150px;
+  height: 50px;
+  border: 1px solid yellow;
+  border-radius: 3px;
+  background-color: yellow;
+  font-weight: bold;
+}
+
+div.course-choose {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  nav.courses {
+    visibility: hidden;
+  }
+  div.course-choose {
+    visibility: visible;
+  }
+  div.course-choose ul li {
+    border-top: 2px solid white;
+    height: 10vh;
+    list-style: none;
+    line-height: 10vh;
+  }
+
+  div.course-choose ul li:last-child {
+    border-bottom: 2px solid white;
+  }
+
+  div.course-choose ul {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 25px;
+  }
+}
+
